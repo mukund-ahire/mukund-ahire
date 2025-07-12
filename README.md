@@ -1,7 +1,32 @@
-# Welcome to My GitHub Page!
+### 👋 Hi there, I'm Mukund Ahire
 
-Hello! 👋 Welcome to my GitHub repository. Here, you'll find projects, code snippets, and experiments that showcase my journey as a developer. 
+🚀 Aspiring AI Engineer | 💻 Full Stack Developer | 🎯 Problem Solver
 
-Feel free to explore, contribute, or reach out if you have any questions or ideas. Let's build something amazing together!
+I'm passionate about building intelligent systems that solve real-world problems. I love working on data-driven projects, crafting clean UIs, and learning through hands-on experimentation.
 
-Happy coding! 🚀
+---
+
+### 🔧 Tech Stack
+
+- 💡 Languages: `Python`, `JavaScript`, `HTML`, `CSS`, `Java`
+- 🧠 AI/ML: `Pandas`, `NumPy`, `Scikit-learn`, `TensorFlow`, `OpenCV`
+- 🌐 Web Dev: `React`, `Node.js`, `Express`, `Firebase`, `MongoDB`
+- ☁️ Cloud & Tools: `Google Cloud`, `Git`, `GitHub`, `VS Code`, `Jupyter`
+
+---
+
+### 📈 What I’m Working On
+- 🤖 AI-based urban intelligence platform (CitySense 🌆)
+- 🎯 Building ML models for predictive analytics
+- 🌐 Designing personal portfolio and microservices with React + Firebase
+
+---
+
+### 📫 Let’s Connect
+- 💼 [LinkedIn](https://www.linkedin.com/in/mukund-ahire)
+- 🌍 [Portfolio - In Process ](https://your-portfolio-link.com...)
+- 📧 Email: mukundahire.work@gmail.com
+
+---
+
+> 🧠 *Learning by building. Creating by experimenting.*  
