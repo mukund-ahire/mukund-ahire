@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi, I'm Mukund Ahire 👋
 
-<!--
-**mukund-ahire/mukund-ahire** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Information Technology Student  
+💻 Passionate about Web Development, AI, and Problem Solving  
+📚 Currently learning Full Stack Development, GitHub, and Real Projects  
+🚀 Goal: Get a great tech job and build impactful projects  
+📍 Pune, India
 
-Here are some ideas to get you started:
+## Current Focus
+- Building strong developer skills
+- Creating projects for portfolio
+- Improving DSA and coding
+- Learning modern tools used in industry
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Connect With Me
+LinkedIn: https://www.linkedin.com/in/mukund-ahire/
