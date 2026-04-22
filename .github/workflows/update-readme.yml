@@ -1,0 +1,38 @@
+name: Update README Date
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 8:00 AM IST
+    - cron: '30 14 * * *'  # 8:00 PM IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Update Date in README
+        run: |
+          DAY=$(TZ='Asia/Kolkata' date '+%A')
+          DATE=$(TZ='Asia/Kolkata' date '+%d %B %Y')
+          TEXT="📅 $DAY, $DATE"
+
+          awk '
+          /<!--START_SECTION:date-->/ {print; print "'"$TEXT"'"; skip=1; next}
+          /<!--END_SECTION:date-->/ {skip=0}
+          !skip
+          ' README.md > temp.md && mv temp.md README.md
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Updated README date"
+          git push
