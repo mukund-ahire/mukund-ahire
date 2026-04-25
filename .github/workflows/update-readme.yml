@@ -1,9 +1,9 @@
-name: Update README Date
+name: Update README Date & Time (IST)
 
 on:
   schedule:
-    - cron: '30 2 * * *'   # 8:00 AM IST
-    - cron: '30 14 * * *'  # 8:00 PM IST
+    - cron: '30 2 * * *'    # 8:00 AM IST
+    - cron: '30 14 * * *'   # 8:00 PM IST
   workflow_dispatch:
 
 permissions:
@@ -17,11 +17,13 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Update Date in README
+      - name: Update README with Indian Date & Time
         run: |
           DAY=$(TZ='Asia/Kolkata' date '+%A')
           DATE=$(TZ='Asia/Kolkata' date '+%d %B %Y')
-          TEXT="📅 $DAY, $DATE"
+          TIME=$(TZ='Asia/Kolkata' date '+%I:%M:%S %p IST')
+
+          TEXT="📅 $DAY, $DATE | 🕒 $TIME"
 
           awk '
           /<!--START_SECTION:date-->/ {print; print "'"$TEXT"'"; skip=1; next}
@@ -31,8 +33,9 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "mukund-ahire"
+          git config --global user.email "mukundahire.work@gmail.com"
+
           git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Updated README date"
+          git commit -m "Updated README with IST time" || echo "No changes to commit"
           git push
