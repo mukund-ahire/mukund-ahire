@@ -1,9 +1,16 @@
-name: Update README Date & Time (IST)
+name: Update README Date
 
 on:
   schedule:
-    - cron: '30 2 * * *'    # 8:00 AM IST
-    - cron: '30 14 * * *'   # 8:00 PM IST
+    # 🌅 Morning - 9:00 AM IST (03:30 UTC)
+    - cron: "30 3 * * *"
+
+    # 🌇 Evening - 5:00 PM IST (11:30 UTC)
+    - cron: "30 11 * * *"
+
+    # 🌙 Night - 9:30 PM IST (16:00 UTC)
+    - cron: "0 16 * * *"
+
   workflow_dispatch:
 
 permissions:
@@ -14,28 +21,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update README with Indian Date & Time
-        run: |
-          DAY=$(TZ='Asia/Kolkata' date '+%A')
-          DATE=$(TZ='Asia/Kolkata' date '+%d %B %Y')
-          TIME=$(TZ='Asia/Kolkata' date '+%I:%M:%S %p IST')
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-          TEXT="📅 $DAY, $DATE | 🕒 $TIME"
-
-          awk '
-          /<!--START_SECTION:date-->/ {print; print "'"$TEXT"'"; skip=1; next}
-          /<!--END_SECTION:date-->/ {skip=0}
-          !skip
-          ' README.md > temp.md && mv temp.md README.md
+      - name: Update README
+        run: node scripts/update-date.js
 
       - name: Commit Changes
         run: |
-          git config --global user.name "mukund-ahire"
-          git config --global user.email "mukundahire.work@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions.noreply.github.com"
 
           git add README.md
-          git commit -m "Updated README with IST time" || echo "No changes to commit"
-          git push
+
+          git diff --staged --quiet || (
+            git commit -m "docs: update README"
+            git push
+          )
