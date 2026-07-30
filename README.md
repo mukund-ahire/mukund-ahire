@@ -1,30 +1,41 @@
 # Hi, I'm Mukund Ahire 👋
 
-🎓 Information Technology Student  
-💻 Passionate about Web Development, AI, and Problem Solving  
-📚 Currently learning Full Stack Development, GitHub, and Real Projects  
-🚀 Goal: Get a great tech job and build impactful projects  
-📍 Pune, India  
+Software Engineer • Full Stack Developer • Java Developer
+
+Building modern web applications, exploring AI, and continuously learning new technologies.
+
+📍 Pune, Maharashtra, India
 
 ---
 
-## 📅 Today
+## Today
 
 <!--START_SECTION:date-->
-📅 Thursday, 30 July 2026 | 🕒 09:34:23 PM IST
+☀️ Good Morning
+
+📅 Thursday, 30 July 2026
+
+🕒 09:00 AM IST
 <!--END_SECTION:date-->
 
 ---
 
-## 🚀 Current Focus
+## Current Focus
 
-- Building strong developer skills
-- Creating projects for portfolio
-- Improving DSA and coding
-- Learning modern tools used in industry
+- Building production-ready projects
+- Full Stack Development
+- Java & Backend Development
+- AI & Machine Learning
+- Data Structures & Algorithms
 
 ---
 
-## 🔗 Connect With Me
+## Connect
 
-LinkedIn: https://www.linkedin.com/in/mukund-ahire/
+- 🌐 **Portfolio:** https://mukund-ahire.github.io/Personal-Website-Mukund-Ahire/
+- 💼 **LinkedIn:** https://www.linkedin.com/in/mukund-ahire/
+- 💻 **GitHub:** https://github.com/mukund-ahire
+
+---
+
+> *Build. Learn. Improve. Repeat.*
