@@ -34,8 +34,8 @@ jobs:
 
       - name: Commit Changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions.noreply.github.com"
+          git config user.name "mukund-ahire"
+          git config user.email "mukundahire.work@gmail.com"
 
           git add README.md
 
